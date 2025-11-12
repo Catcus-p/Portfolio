@@ -37,3 +37,23 @@ footer{
     padding: 10px 0;
     width: 100%;
 }
+@media( max-width:768px){
+    header{
+        text-align: left;
+        padding : 15px 40px;
+        background-color: lightcoral;
+    }
+    nav ul{
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+    section{
+        margin: 40px auto;
+
+    }
+    footer{
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+}
