@@ -5,16 +5,23 @@ body{
     padding: 0;
 }
 header{
-    background-color: azure;
+    background-color: rgb(84, 12, 110);
     font-family:Arial, Helvetica, sans-serif;
     padding: 10px 0;
-    text-align: center;
+    text-align:start;
 }
 nav ul{
+    background-color: rgb(84, 12, 110);
     list-style: none;
     padding : 0;
 }
-nav li{
+nav{
+ li::before{
+    content:"🌟"
+    }
+    li::after{
+    content:"😁"
+    }
     display: inline;
     margin: 0 15px;
 }
@@ -24,19 +31,40 @@ nav a{
     font-weight: bold;
 
 }
+nav a:hover{
+    text-decoration: underline;
+}
+nav a:active{
+    color: yellow;
+}
+nav a:visited{
+    color: lightgray;
+}
+nav a:link{
+    color: white;
+}
+nav a:focus{
+    background-color: yellow;
+    color: black;
+}
+section h2::selection{
+    color: rgb(84, 12, 110);
+    background-color: yellow;
+}
 section{
     margin: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
 }
-footer{
+footer::first-letter{
     background-color: #333;
     color: white;
-    text-align: end;
+    text-align: center;
     padding: 10px 0;
     width: 100%;
 }
+
 @media( max-width:768px){
     header{
         text-align: left;
